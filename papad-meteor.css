@@ -1,0 +1,30 @@
+/* CSS declarations go here */
+nav {
+    background-color: #fff;
+}
+.login-container {
+    margin:15px;
+}
+audio {
+    margin:10px;
+}
+.audio-item {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.audio-input{
+    width: 100%;
+}
+.input-form {
+    padding:5px;
+}
+.tags-group {
+    padding: 5px;
+}
+.accounts-dialog{
+    margin-left: -120px;
+}
+.session-station{
+    margin-top:-15px;
+}
