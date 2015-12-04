@@ -7,8 +7,8 @@ Audio Tagger implementation with Meteor
 * Future Features will include add tags, indexing and searching features.
 
 ## To run application ##
-* Clone this repository
-* cd '<app directory>'
+* $ Clone this repository
+* $ cd app directory
 * $ meteor
 
 run the command meteor in the app directory and you should have the
