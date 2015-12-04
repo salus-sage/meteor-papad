@@ -1,4 +1,7 @@
 /* CSS declarations go here */
+.list-group {
+    padding:15px;
+}
 nav {
     background-color: #fff;
 }
@@ -27,4 +30,7 @@ audio {
 }
 .session-station{
     margin-top:-15px;
+}
+.media-object{
+    width:50px;
 }

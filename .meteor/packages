@@ -18,7 +18,6 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 insecure                # Allow all DB writes from clients (for prototyping)
 http
-twbs:bootstrap
 delgermurun:mediaelementjs
 accounts-ui
 accounts-password
@@ -31,3 +30,10 @@ cfs:filesystem
 awatson1978:dropzone
 mrt:loadpicker
 ajduke:bootstrap-tagsinput
+matb33:bootstrap-full
+cfs:gridfs
+iron:router
+meteorhacks:npm
+
+
+npm-container
