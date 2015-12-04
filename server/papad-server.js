@@ -1,11 +1,3 @@
-Meteor.methods({
-    addTags: function(text, id) {
-        Files.update({_id: id},
-                {$addToSet:{comments : { "text" : text, "username" : Meteor.user().profile.name,
-                                           "userId":Meteor.userId, "createdAt" : new Date(), "tags" : [] }}
-                });
-    }
-});
 Meteor.publish("Files", function(){
     return Files.find({}, {sort: {uploadedAt:-1}});
 });
