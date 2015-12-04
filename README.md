@@ -8,7 +8,7 @@ Audio Tagger implementation with Meteor
 
 ## To run application ##
 * Clone this repository
-* cd <app directory>
+* cd '<app directory>'
 * $ meteor
 
 run the command meteor in the app directory and you should have the
