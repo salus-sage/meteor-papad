@@ -1,9 +1,11 @@
 <template name="file">
     <div class="audio-item" >
         <div class="panel panel-default">
-            <small><strong>{{owner}}</strong> on
-                <p>{{this.uploadedAt}}</p></small>
-            <h3>{{stationName}}</h3>
+            <div class="panel-heading">
+                <small><strong>{{owner}}</strong> on
+                    <p>{{this.uploadedAt}}</p></small>
+                <h3>{{stationName}}</h3>
+            </div>
             {{#if isAudio}}
             <audio controls="controls" preload="none">
                 Your browser does not support the <code>audio</code> element.
@@ -17,8 +19,8 @@
             {{#if currentUser}}
             <form class="input-form">
                 <input type="text" name="text" data-role="tagsinput"
-                       title="Write a comment…" placeholder="Write a comment…"
-                       value="" class="audio-input">
+                                               title="Write a comment…" placeholder="Write a comment…"
+                                                                          value="" class="audio-input">
             </form>
             {{/if}}
             {{#if comments}}
@@ -27,33 +29,33 @@
                                        href="#{{_id}}"
                                        aria-expanded="false"
                                        aria-controls="{{_id}}">
-                  Comments
-                  <span class="glyphicon
-                      glyphicon-collapse-down"></span>
+                Comments
+                <span class="glyphicon
+                glyphicon-collapse-down"></span>
             </a>
             <div class="collapse" id="{{_id}}">
-            {{#each comments}}
-            <hr>
-            <div class="media">
-                <div class="media-left">
-                    <img class="media-object"
-                         src="http://freeiconbox.com/icon/256/16480.png" alt="profile-img"
-                                                     />
-                </div>
-                <div class="media-body">
-                    <div class="media-heading">
-                        <small><strong>{{username}}</strong> on {{createdAt}}</small>
+                {{#each comments}}
+                <hr>
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object"
+                             src="http://freeiconbox.com/icon/256/16480.png" alt="profile-img"
+                                                                             />
                     </div>
-                    {{#if tags}}
-                    {{#each tags}}
-                    <span class="label
-                    label-default">{{this}}</span>
-                    {{/each}}
-                    {{/if}}
-                    <quote>{{text}}</quote>
+                    <div class="media-body">
+                        <div class="media-heading">
+                            <small><strong>{{username}}</strong> on {{createdAt}}</small>
+                        </div>
+                        {{#if tags}}
+                        {{#each tags}}
+                        <span class="label
+                        label-default">{{this}}</span>
+                        {{/each}}
+                        {{/if}}
+                        <quote>{{text}}</quote>
+                    </div>
                 </div>
-            </div>
-            {{/each}}
+                {{/each}}
             </div>
             {{/if}}
         </div>

@@ -4,7 +4,6 @@ accounts-oauth@1.1.8
 accounts-password@1.1.4
 accounts-ui@1.1.6
 accounts-ui-unstyled@1.1.8
-ajduke:bootstrap-tagsinput@0.7.0
 autoupdate@1.2.4
 awatson1978:dropzone@1.0.2
 babel-compiler@5.8.24_1
@@ -43,7 +42,6 @@ ddp-client@1.2.1
 ddp-common@1.2.2
 ddp-rate-limiter@1.0.0
 ddp-server@1.2.2
-delgermurun:mediaelementjs@2.16.1_1
 deps@1.0.9
 diff-sequence@1.0.1
 ecmascript@0.1.6
@@ -157,7 +155,6 @@ standard-minifiers@1.0.2
 templating@1.1.5
 templating-tools@1.0.0
 tracker@1.0.9
-twbs:bootstrap@3.3.6
 ui@1.0.8
 underscore@1.0.4
 url@1.0.5

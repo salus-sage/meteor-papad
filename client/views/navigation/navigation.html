@@ -1,5 +1,5 @@
 <template name="navigation">
-<section class="container" id="header">
+    <section class="container" id="header">
         <div class="row">
             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
@@ -12,7 +12,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="session-station">
-                            <h1>{{stationName}}</h1>
+                            <h1>HalekoteTumblr</h1>
                         </div>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
@@ -25,16 +25,20 @@
                             <li class="login-container">
                                 {{> loginButtons}}
                             </li>
+                            <li>
+                                {{#if currentUser}}
+                                <div class="upload-container">
+                                    {{> upload}}
+                                </div>
+                                {{/if}}
+                            </li>
                         </ul>
-			{{#if currentUser}}
-			{{> upload}}
-			{{/if}}
                     </div>
                 </div>
             </nav>
         </div>
-        <div class="page-header">
+        <!--div class="page-header">
             <p class="text-center" style="margin-top:50px;"> testing for flash messages</p>
-        </div>
+            </div-->
     </section>
 </template>

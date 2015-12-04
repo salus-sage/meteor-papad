@@ -1,6 +1,5 @@
 Template.upload.events({
         'change .myFileInput': function(event, template) {
-            console.log(Files.find().fetch());
             FS.Utility.eachFile(event, function(file) {
                 var file = event.target.files[0];
                 if(!file) return;
